@@ -1,0 +1,32 @@
+[
+    {
+        "url": "https://www.amazon.com/gp/offer-listing/B01K49W7KC",
+        "identifier": "B01K49W7KC",
+        "description": "SilverStone Strider 1200W",
+        "category": "HARDWARE",
+        "product": "SilverStone 1200W",
+        "component": "AmazonOffer",
+        "enabled": true,
+        "max_price": 220.00
+    },
+    {
+        "url": "https://www.amazon.com/gp/offer-listing/B08164VTWH",
+        "identifier": "B08164VTWH",
+        "description": "AMD 5900X CPU",
+        "category": "CPU",
+        "product": "5900X",
+        "component": "AmazonOffer",
+        "enabled": true
+    },
+    {
+        "url": "https://www.amazon.com/gp/offer-listing/B0815Y8J9N",
+        "identifier": "B0815Y8J9N",
+        "description": "AMD 5950X CPU",
+        "category": "CPU",
+        "product": "5950X",
+        "component": "AmazonOffer",
+        "enabled": true
+    }
+   
+
+]

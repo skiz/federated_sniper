@@ -1,0 +1,23 @@
+[
+    {
+      "id":"123",
+      "name":"Bobby's Tables",
+      "status":"open",
+      "slots":5000,
+      "module":"tables"
+    },
+    {
+      "id":"122",
+      "name":"Uncle Jack's Horse",
+      "status":"open",
+      "slots":233,
+      "module":"horses"
+    },
+    {
+      "id":"142",
+      "name":"Timmy's Blankey",
+      "status":"closed",
+      "slots":0,
+      "module":"blankets"
+    }
+]

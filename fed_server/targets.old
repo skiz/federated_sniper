@@ -1,0 +1,46 @@
+ {
+        "url": "https://www.amazon.com/gp/offer-listing/B08FC5L3RG",
+        "identifier": "B08FC5L3RG",
+        "description": "Sony Playstation 5",
+        "category": "CONSOLE",
+        "product": "PS5",
+        "component": "AmazonOffer",
+        "enabled": true
+    }
+    ,
+    {
+        "url": "https://www.amazon.com/gp/offer-listing/B08G9J44ZN",
+        "identifier": "B08G9J44ZN",
+        "description": "Xbox Series S",
+        "category": "CONSOLE",
+        "product": "SERIES S",
+        "component": "AmazonOffer",
+        "enabled": true
+    },
+    {
+        "url": "https://www.amazon.com/gp/offer-listing/B08H75RTZ8",
+        "identifier": "B08H75RTZ8",
+        "description": "Xbox Series X",
+        "category": "CONSOLE",
+        "product": "SERIES X",
+        "component": "AmazonOffer",
+        "enabled": true,
+        "max_price": 550.00
+    }, {
+        "url": "https://www.amazon.com/gp/offer-listing/B08164VTWH",
+        "identifier": "B08164VTWH",
+        "description": "AMD 5900X CPU",
+        "category": "CPU",
+        "product": "5900X",
+        "component": "AmazonOffer",
+        "enabled": true
+    },
+    {
+        "url": "https://www.amazon.com/gp/offer-listing/B0815Y8J9N",
+        "identifier": "B0815Y8J9N",
+        "description": "AMD 5950X CPU",
+        "category": "CPU",
+        "product": "5950X",
+        "component": "AmazonOffer",
+        "enabled": true
+    }

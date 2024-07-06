@@ -1,0 +1,89 @@
+# cat t.data | redis-cli
+
+flushdb
+
+sadd key:test:pools 101 123
+ 
+sadd pools:123:targets "B0815Y8J9N"
+sadd pools:123:targets "B01K49W7KC"
+sadd pools:123:targets "B08164VTWH"
+sadd pools:123:targets "B0815XFSGK"
+
+sadd pools:101:targets "B08H75RTZ8"
+sadd pools:101:targets "B08G9J44ZN"
+sadd pools:101:targets "B08FC5L3RG"
+sadd pools:101:targets "B08FC6MR62"
+
+hset pools:123:meta name "PC Gamer Desk"
+hset pools:123:meta status 1
+hset pools:123:meta slots 10
+hset pools:123:meta id 123
+
+hset pools:101:meta name "Console Corner"
+hset pools:101:meta status 1
+hset pools:101:meta slots 10
+hset pools:101:meta id 101
+
+hset targets:B0815Y8J9N url https://www.amazon.com/gp/offer-listing/B0815Y8J9N
+hset targets:B0815Y8J9N description "AMD 5950X CPU"
+hset targets:B0815Y8J9N category "CPU"
+hset targets:B0815Y8J9N product "5950X"
+hset targets:B0815Y8J9N component AmazonOffer
+hset targets:B0815Y8J9N max_price 810
+hset targets:B0815Y8J9N identifier B0815Y8J9N
+
+hset targets:B01K49W7KC url https://www.amazon.com/gp/offer-listing/B01K49W7KC
+hset targets:B01K49W7KC description "SilverStone 1200W Power Supply"
+hset targets:B01K49W7KC category HARDWARE
+hset targets:B01K49W7KC product "SilverStone 1200W"
+hset targets:B01K49W7KC component AmazonOffer
+hset targets:B01K49W7KC max_price 250
+hset targets:B01K49W7KC identifier B01K49W7KC
+
+hset targets:B0815XFSGK url https://www.amazon.com/gp/offer-listing/B0815XFSGK
+hset targets:B0815XFSGK description "AMD 5900X CPU"
+hset targets:B0815XFSGK category CPU
+hset targets:B0815XFSGK product "5800X"
+hset targets:B0815XFSGK component AmazonOffer
+hset targets:B0815XFSGK max_price 520
+hset targets:B0815XFSGK identifier B0815XFSGK
+
+hset targets:B08164VTWH url https://www.amazon.com/gp/offer-listing/B08164VTWH
+hset targets:B08164VTWH description "AMD 5900X CPU"
+hset targets:B08164VTWH category CPU
+hset targets:B08164VTWH product "5900X"
+hset targets:B08164VTWH component AmazonOffer
+hset targets:B08164VTWH max_price 570
+hset targets:B08164VTWH identifier B08164VTWH
+
+hset targets:B08H75RTZ8 url https://www.amazon.com/gp/offer-listing/B08H75RTZ8
+hset targets:B08H75RTZ8 description "Xbox Series X"
+hset targets:B08H75RTZ8 category CONSOLE
+hset targets:B08H75RTZ8 product "Series X"
+hset targets:B08H75RTZ8 component AmazonOffer
+hset targets:B08H75RTZ8 max_price 550
+hset targets:B08H75RTZ8 identifier B08H75RTZ8
+
+hset targets:B08G9J44ZN url https://www.amazon.com/gp/offer-listing/B08H75RTZ8
+hset targets:B08G9J44ZN description "Xbox Series S"
+hset targets:B08G9J44ZN category CONSOLE
+hset targets:B08G9J44ZN product "Series S"
+hset targets:B08G9J44ZN component AmazonOffer
+hset targets:B08G9J44ZN max_price 320
+hset targets:B08G9J44ZN identifier B08G9J44ZN
+
+hset targets:B08FC5L3RG url https://www.amazon.com/gp/offer-listing/B08FC5L3RG
+hset targets:B08FC5L3RG description "Sony Playstation 5 Std"
+hset targets:B08FC5L3RG category CONSOLE
+hset targets:B08FC5L3RG product PS5
+hset targets:B08FC5L3RG component AmazonOffer
+hset targets:B08FC5L3RG max_price 520
+hset targets:B08FC5L3RG identifier B08FC5L3RG
+
+hset targets:B08FC6MR62 url https://www.amazon.com/gp/offer-listing/B08FC6MR62
+hset targets:B08FC6MR62 description "Sony Playstation 5 Dgt"
+hset targets:B08FC6MR62 category CONSOLE
+hset targets:B08FC6MR62 product "PS5 Digital"
+hset targets:B08FC6MR62 component AmazonOffer
+hset targets:B08FC6MR62 max_price 420
+hset targets:B08FC6MR62 identifier B08FC6MR62
