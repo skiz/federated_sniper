@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        form {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            grid-gap: 16px;
+            width: 850px;
+        }
+
+        label {
+            grid-column: 1/2;
+            font-weight: bold;
+        }
+
+        input,
+        button {
+            grid-column: 2 / 3;
+        }
+
+        div#log {
+            width: 840px;
+            height: 200px;
+            border: solid 1px #000;
+            clear: left;
+            margin-top: 20px;
+            padding: 5px;
+        }
+
+        div#log span {
+            display:block;
+        }
+
+        th {
+            text-align:left;
+        }
+
+        h1 {
+            height:64px;
+            background:url('icons/icon-48.png') no-repeat;
+            padding-left:64px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Federated Stonk Alerts</h1>
+
+    <form id="cform" method="post">
+        <label for="host">Federation Host</label>
+        <input id="host" type="input" name="host" />
+
+        <label for="access_key">Access Key</label>
+        <input id="access_key" type="password" name="access_key" />
+
+        <label for="update_pools"></label><button id="update_pools">Update Pools</button>
+        <label for="pool">Pool Selection</label>
+        <select name="pool" disabled="true" size="6">
+            <option selected="true" disabled="true">Waiting for access...</option>
+        </select>
+
+        <label for="targets">Target Selection</label>
+        <table id="targets">
+            <thead>
+                <tr>
+                    <th>Monitor</th>
+                    <th>Add To Cart</th>
+                    <th>Auto Buy</th>
+                    <th>Identifier</th>
+                    <th>Category</th>
+                    <th>Product</th>
+                    <th>Add/Buy Max</th>
+                    <th>Max Alert</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <label for="max_spend">Maximum Spend (USD)</label>
+        <input type="text" name="max_spend" />
+        <label for="min_delay_ms">Minimum Delay (usec)</label>
+        <input type="text" size="1" name="min_delay_ms" value="5000" />
+        <label for="random_skew_ms">Random Skew (usec)</label>
+        <input type="text" size="1" name="random_skew_ms" value="10000" />
+    
+        <label for="audio_alerts">Enable Audio Alerts</label>
+        <input type="checkbox" name="audio_alerts" />
+        <div id="control">
+            <button disabled name="start">start</button>
+            <button disabled name="stop">stop</button>
+        </div>
+
+    </form>
+    <div id="log">
+    </div>
+
+</body>
+
+<script src="options.js"></script>
+
+</html>
